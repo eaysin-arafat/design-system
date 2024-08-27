@@ -1,0 +1,558 @@
+@charset "UTF-8";
+/*=============================================
+=            TABLE OF CONTENTS            =
+=============================================*/
+/**
+ *
+ * FOUNDATIONS..........
+ * BASE.................
+ */
+/*----------  Foundations  ----------*/
+/*=============================================
+=            #Variables                      =
+=============================================*/
+/**
+* TABLE OF CONTENTS
+*
+* COLORS
+* Brand colors........These are the main brand colors. They will be used the most
+* Neutral colors......White and black, gray scale, secondary colors.
+* Utility colors......Other colors to represent states: info, warning, success, etc.
+*
+* TYPOGRAPHY
+* Font families.......The fonts used in the design system.
+* Font weights........Font weights
+* Sizes...............Font sizing for body text, paragraphs, inputs
+* Heading sizes.......Font sizing for page headings
+*
+* BREAKPOINTS
+* Breakpoints.........Global responsive breakpoints definitions.
+*
+* SPACING
+* Spacing..............Global fixed set of spacing variables
+*
+* SHADOW
+* Shadow...............Global fixed set of shadow variables
+*/
+/*----------  COLORS  ----------*/
+/* Brand colors */
+/* Neutral colors */
+/* Utility colors */
+/*----------  TYPOGRAPHY  ----------*/
+/**
+ *
+ * 1) The playfair font. We'll use this for headings mostly.
+ *    https://fonts.google.com/specimen/Playfair+Display
+ *
+ * 2) The raleway font. We'll use this for the body text.
+ *    https://fonts.google.com/specimen/Raleway
+ *
+ */
+/* Font families */
+/* Font weights */
+/* Font Sizes */
+/* Heading sizes */
+/*----------  BREAKPOINTS  ----------*/
+/* Breakpoints */
+/*----------  SPACING  ----------*/
+/* Spacing */
+/*----------  SHADOW  ----------*/
+/* Shadow */
+/*=============================================
+=            Foundation Colors               =
+=============================================*/
+/**
+ * This file defines the foundational color variables used throughout the design system.
+ * These colors default to the palette defined in `variables.scss`. Developers can
+ * override these defaults with their own variables.
+ */
+/*----------  Global Text Colors  ----------*/
+/**
+ * Text color for body content and background color.
+ * These variables can be overridden by defining custom CSS variables.
+ */
+/*----------  Link Colors  ----------*/
+/**
+ * Link color settings, including hover and visited states.
+ */
+/*----------  Border Colors  ----------*/
+/**
+ * Border colors for various UI elements.
+ */
+/*----------  Button Colors  ----------*/
+/**
+ * Primary button colors including text color, background color, and hover background color.
+ */
+/*----------  Form Elements  ----------*/
+/**
+ * Form element colors including borders, backgrounds, and state colors.
+ */
+/*----------  Shadows  ----------*/
+/**
+ * Shadow styles for elements such as cards, modals, and buttons.
+ */
+/*----------  State Colors  ----------*/
+/**
+ * Colors for UI states such as hover, active, and disabled.
+ */
+/*----------  Background Colors  ----------*/
+/**
+ * General background colors for various components.
+ */
+/*----------  Text Color States  ----------*/
+/**
+ * Text colors for different states like success, error, and info.
+ */
+/*----------  End of Foundation Colors  ----------*/
+/*=============================================
+=            Foundation Typography           =
+=============================================*/
+/**
+ * This file defines the typography settings for the design system,
+ * including font families, font sizes, font weights, and line heights.
+ */
+/*----------  Font Families  ----------*/
+/*----------  Font Sizes  ----------*/
+/*----------  Font Weights  ----------*/
+/*----------  Line Heights  ----------*/
+/*----------  Letter Spacing  ----------*/
+/*----------  Text Transformations  ----------*/
+/*=====  End of Section comment block  ======*/
+/*=============================================
+=            Essential SCSS Mixins            =
+=============================================*/
+/*----------  Responsive Typography  ----------*/
+/**
+ * Mixin for responsive font sizes that scale between two breakpoints.
+ * @param {number} $min-size - Font size at the smallest breakpoint.
+ * @param {number} $max-size - Font size at the largest breakpoint.
+ * @param {number} $min-width - Smallest viewport width.
+ * @param {number} $max-width - Largest viewport width.
+ */
+/*----------  Media Queries  ----------*/
+/**
+ * Mixin for media queries.
+ * Allows for easier and more readable media queries.
+ * @param {string} $breakpoint - The breakpoint for the media query.
+ */
+/*----------  Flexbox Layouts  ----------*/
+/**
+ * Mixin for flexbox container.
+ * Provides shorthand for common flexbox properties.
+ * @param {string} $direction - Flex direction (row, column, etc.).
+ * @param {string} $justify - Justify content (flex-start, center, etc.).
+ * @param {string} $align - Align items (stretch, center, etc.).
+ * @param {string} $wrap - Flex wrap (nowrap, wrap, etc.).
+ */
+/**
+ * Mixin for flexbox item.
+ * Provides shorthand for common flexbox item properties.
+ * @param {number|string} $grow - Flex grow (0, 1, etc.).
+ * @param {number|string} $shrink - Flex shrink (0, 1, etc.).
+ * @param {string} $basis - Flex basis (auto, 100px, etc.).
+ */
+/*----------  Centering Elements  ----------*/
+/**
+ * Mixin for centering elements horizontally and vertically using flexbox.
+ * Can be applied to a flex container.
+ */
+/**
+ * Mixin for absolute centering.
+ * Centers an element absolutely within its container.
+ */
+/*----------  Clearfix  ----------*/
+/**
+ * Mixin for clearfix.
+ * Ensures that a container clears its floated children.
+ */
+/*----------  Transition  ----------*/
+/**
+ * Mixin for applying smooth transitions.
+ * Provides shorthand for transition properties.
+ * @param {string} $property - CSS property to transition.
+ * @param {string} $duration - Duration of the transition (e.g., 0.3s).
+ * @param {string} $timing - Timing function (e.g., ease, linear).
+ * @param {string} $delay - Delay before the transition starts.
+ */
+/*----------  Text Ellipsis  ----------*/
+/**
+ * Mixin for applying text ellipsis.
+ * Ensures that overflowing text is truncated with an ellipsis.
+ */
+/*----------  Aspect Ratio  ----------*/
+/**
+ * Mixin for maintaining aspect ratio of an element.
+ * Provides a way to create elements with a specific aspect ratio.
+ * @param {number} $width - Width of the aspect ratio (e.g., 16).
+ * @param {number} $height - Height of the aspect ratio (e.g., 9).
+ */
+/*----------  Box Shadow  ----------*/
+/**
+ * Mixin for applying box shadow.
+ * Provides shorthand for box-shadow properties.
+ * @param {string} $x-offset - Horizontal offset of the shadow.
+ * @param {string} $y-offset - Vertical offset of the shadow.
+ * @param {string} $blur-radius - Blur radius of the shadow.
+ * @param {string} $spread-radius - Spread radius of the shadow.
+ * @param {string} $color - Color of the shadow.
+ */
+/*=============================================
+=            End of Essential Mixins          =
+=============================================*/
+/*----------  BASE  ----------*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  background: transparent;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+h1 {
+  font-size: var(--su-h1-font-size, 2.5rem);
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: var(--su-h2-font-size, 2rem);
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: var(--su-h3-font-size, 1.75rem);
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: var(--su-h4-font-size, 1.5rem);
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: var(--su-h5-font-size, 1.25rem);
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: var(--su-h6-font-size, 1rem);
+  margin: 2.33em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Default CSS Variables */
+/**
+ *
+ * ! Default CSS Variables
+ * As scss is not fully compatible with CSS,
+ * We need embed this variable
+ */
+:root {
+  /*=============================================
+  =            Colors            =
+  =============================================*/
+  /*----------  Global Text Colors  ----------*/
+  --su-body-text-color: #000000;
+  --su-body-bg-color: #ffffff;
+  /*----------  Link Colors  ----------*/
+  --su-link-color: #2280de;
+  --su-link-hover-color: #175c9e;
+  --su-link-visited-color: #63a9ff;
+  --su-link-active-color: #175c9e;
+  /*----------  Border Colors  ----------*/
+  --su-border-color: #c4c4c4;
+  --su-border-color-hover: #666666;
+  --su-border-color-focus: #2280de;
+  --su-border-color-disabled: #f5f5f5;
+  /*----------  Button Colors  ----------*/
+  --su-btn-primary-color: #ffffff;
+  --su-btn-primary-bg-color: #2280de;
+  --su-btn-primary-bg-hover: #63a9ff;
+  --su-btn-disabled-color: #666666;
+  --su-btn-disabled-bg-color: #c4c4c4;
+  /*----------  Form Elements  ----------*/
+  --dse-form-border-color: #c4c4c4;
+  --dse-form-bg-color: #ffffff;
+  --dse-form-bg-option-selected: #28a745;
+  --dse-form-color-option-selected: #ffffff;
+  --dse-form-bg-color-hover: #f5f5f5;
+  --dse-form-color: #000000;
+  --dse-form-bg: #ffffff;
+  --dse-form-error-color: #dc3545;
+  --dse-form-error-border: #dc3545;
+  --dse-form-border-focus-color: #28a745;
+  --dse-form-label-color: #000000;
+  --dse-form-placeholder-color: #666666;
+  --dse-form-disabled-bg-color: #f5f5f5;
+  --dse-form-disabled-border-color: #c4c4c4;
+  /*----------  Shadows  ----------*/
+  --su-shadow-light: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  --su-shadow-medium: 0px 3px 6px rgba(0, 0, 0, 0.15);
+  --su-shadow-heavy: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  /*----------  State Colors  ----------*/
+  --su-hover-color: #63a9ff;
+  --su-active-color: #175c9e;
+  --su-disabled-color: #666666;
+  /*----------  Background Colors  ----------*/
+  --su-bg-primary: #2280de;
+  --su-bg-secondary: #f5f5f5;
+  --su-bg-success: #28a745;
+  --su-bg-warning: #ffc107;
+  --su-bg-error: #dc3545;
+  --su-bg-info: #17a2b8;
+  --su-bg-disabled: #c4c4c4;
+  /*----------  Text Color States  ----------*/
+  --su-text-success: #28a745;
+  --su-text-warning: #ffc107;
+  --su-text-error: #dc3545;
+  --su-text-info: #17a2b8;
+  --su-text-disabled: #666666;
+  /*=====  End of Colors  ======*/
+  /*=============================================
+  =            Typography            =
+  =============================================*/
+  /*----------  Font Families  ----------*/
+  --su-body-font-family: "Helvetica, Arial, sans-serif";
+  --su-heading-font-family: "Georgia, serif";
+  --su-monospace-font-family: "Courier New, monospace";
+  /*----------  Font Sizes  ----------*/
+  --su-body-font-size: 16px;
+  --su-body-line-height: 1.5;
+  --su-body-letter-spacing: 0.02em;
+  --su-h1-font-size: 2.5rem;
+  --su-h2-font-size: 2rem;
+  --su-h3-font-size: 1.75rem;
+  --su-h4-font-size: 1.5rem;
+  --su-h5-font-size: 1.25rem;
+  --su-h6-font-size: 1rem;
+  /*----------  Font Weights  ----------*/
+  --su-body-font-weight: 400;
+  --su-heading-font-weight: 700;
+  --su-h1-font-weight: var(--su-heading-font-weight, 700);
+  --su-h2-font-weight: var(--su-heading-font-weight, 700);
+  --su-h3-font-weight: var(--su-heading-font-weight, 700);
+  --su-h4-font-weight: var(--su-heading-font-weight, 700);
+  --su-h5-font-weight: var(--su-heading-font-weight, 700);
+  --su-h6-font-weight: var(--su-heading-font-weight, 700);
+  /*----------  Line Heights  ----------*/
+  --su-h1-line-height: 1.2;
+  --su-h2-line-height: 1.3;
+  --su-h3-line-height: 1.4;
+  --su-h4-line-height: 1.5;
+  --su-h5-line-height: 1.6;
+  --su-h6-line-height: 1.7;
+  /*----------  Letter Spacing  ----------*/
+  --su-h1-letter-spacing: -0.02em;
+  --su-h2-letter-spacing: -0.015em;
+  --su-h3-letter-spacing: -0.01em;
+  --su-h4-letter-spacing: 0em;
+  --su-h5-letter-spacing: 0.01em;
+  --su-h6-letter-spacing: 0.02em;
+  /*----------  Text Transformations  ----------*/
+  --su-h1-text-transform: uppercase;
+  --su-h2-text-transform: none;
+  --su-h3-text-transform: none;
+  --su-h4-text-transform: none;
+  --su-h5-text-transform: none;
+  --su-h6-text-transform: none;
+  /*=====  End of Typography  ======*/
+}
+
+/*=====  End of TABLE OF CONTENTS  ======*/

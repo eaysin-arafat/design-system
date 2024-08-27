@@ -1,0 +1,141 @@
+/* Default CSS Variables */
+
+/**
+ *
+ * ! Default CSS Variables
+ * As scss is not fully compatible with CSS,
+ * We need embed this variable
+ */
+
+:root {
+  /*=============================================
+  =            Colors            =
+  =============================================*/
+
+  /*----------  Global Text Colors  ----------*/
+  --su-body-text-color: #{$black};
+  --su-body-bg-color: #{$white};
+
+  /*----------  Link Colors  ----------*/
+  --su-link-color: #{$primary-blue};
+  --su-link-hover-color: #{$primary-dark};
+  --su-link-visited-color: #{$primary-light};
+  --su-link-active-color: #{$primary-dark};
+
+  /*----------  Border Colors  ----------*/
+  --su-border-color: #{$gray-medium};
+  --su-border-color-hover: #{$gray-dark};
+  --su-border-color-focus: #{$primary-blue};
+  --su-border-color-disabled: #{$gray-light};
+
+  /*----------  Button Colors  ----------*/
+  --su-btn-primary-color: #{$white};
+  --su-btn-primary-bg-color: #{$primary-blue};
+  --su-btn-primary-bg-hover: #{$primary-light};
+  --su-btn-disabled-color: #{$gray-dark};
+  --su-btn-disabled-bg-color: #{$gray-medium};
+
+  /*----------  Form Elements  ----------*/
+  --dse-form-border-color: #{$gray-medium};
+  --dse-form-bg-color: #{$white};
+  --dse-form-bg-option-selected: #{$success-green};
+  --dse-form-color-option-selected: #{$white};
+  --dse-form-bg-color-hover: #{$gray-light};
+  --dse-form-color: #{$black};
+  --dse-form-bg: #{$white};
+  --dse-form-error-color: #{$error-red};
+  --dse-form-error-border: #{$error-red};
+  --dse-form-border-focus-color: #{$success-green};
+  --dse-form-label-color: #{$black};
+  --dse-form-placeholder-color: #{$gray-dark};
+  --dse-form-disabled-bg-color: #{$gray-light};
+  --dse-form-disabled-border-color: #{$gray-medium};
+
+  /*----------  Shadows  ----------*/
+  --su-shadow-light: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  --su-shadow-medium: 0px 3px 6px rgba(0, 0, 0, 0.15);
+  --su-shadow-heavy: 0px 5px 15px rgba(0, 0, 0, 0.2);
+
+  /*----------  State Colors  ----------*/
+  --su-hover-color: #{$primary-light};
+  --su-active-color: #{$primary-dark};
+  --su-disabled-color: #{$gray-dark};
+
+  /*----------  Background Colors  ----------*/
+  --su-bg-primary: #{$primary-blue};
+  --su-bg-secondary: #{$gray-light};
+  --su-bg-success: #{$success-green};
+  --su-bg-warning: #{$warning-yellow};
+  --su-bg-error: #{$error-red};
+  --su-bg-info: #{$info-cyan};
+  --su-bg-disabled: #{$gray-medium};
+
+  /*----------  Text Color States  ----------*/
+  --su-text-success: #{$success-green};
+  --su-text-warning: #{$warning-yellow};
+  --su-text-error: #{$error-red};
+  --su-text-info: #{$info-cyan};
+  --su-text-disabled: #{$gray-dark};
+
+  /*=====  End of Colors  ======*/
+
+  /*=============================================
+  =            Typography            =
+  =============================================*/
+
+  /*----------  Font Families  ----------*/
+  --su-body-font-family: "Helvetica, Arial, sans-serif";
+  --su-heading-font-family: "Georgia, serif";
+  --su-monospace-font-family: "Courier New, monospace";
+
+  /*----------  Font Sizes  ----------*/
+  --su-body-font-size: 16px;
+  --su-body-line-height: 1.5;
+  --su-body-letter-spacing: 0.02em;
+
+  --su-h1-font-size: 2.5rem;
+  --su-h2-font-size: 2rem;
+  --su-h3-font-size: 1.75rem;
+  --su-h4-font-size: 1.5rem;
+  --su-h5-font-size: 1.25rem;
+  --su-h6-font-size: 1rem;
+
+  /*----------  Font Weights  ----------*/
+  --su-body-font-weight: 400;
+  --su-heading-font-weight: 700;
+
+  --su-h1-font-weight: var(--su-heading-font-weight, 700);
+  --su-h2-font-weight: var(--su-heading-font-weight, 700);
+  --su-h3-font-weight: var(--su-heading-font-weight, 700);
+  --su-h4-font-weight: var(--su-heading-font-weight, 700);
+  --su-h5-font-weight: var(--su-heading-font-weight, 700);
+  --su-h6-font-weight: var(--su-heading-font-weight, 700);
+
+  /*----------  Line Heights  ----------*/
+  --su-h1-line-height: 1.2;
+  --su-h2-line-height: 1.3;
+  --su-h3-line-height: 1.4;
+  --su-h4-line-height: 1.5;
+  --su-h5-line-height: 1.6;
+  --su-h6-line-height: 1.7;
+
+  /*----------  Letter Spacing  ----------*/
+  --su-h1-letter-spacing: -0.02em;
+  --su-h2-letter-spacing: -0.015em;
+  --su-h3-letter-spacing: -0.01em;
+  --su-h4-letter-spacing: 0em;
+  --su-h5-letter-spacing: 0.01em;
+  --su-h6-letter-spacing: 0.02em;
+
+  /*----------  Text Transformations  ----------*/
+  --su-h1-text-transform: uppercase;
+  --su-h2-text-transform: none;
+  --su-h3-text-transform: none;
+  --su-h4-text-transform: none;
+  --su-h5-text-transform: none;
+  --su-h6-text-transform: none;
+
+  /*=====  End of Typography  ======*/
+
+  
+}

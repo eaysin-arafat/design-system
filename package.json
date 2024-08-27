@@ -1,0 +1,19 @@
+{
+  "name": "@sync-workspace/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "yarn lerna run build"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "playgrounds/*"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "^8.1.8"
+  }
+}

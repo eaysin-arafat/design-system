@@ -1,0 +1,187 @@
+/*=============================================
+=            #Variables                      =
+=============================================*/
+
+/**
+* TABLE OF CONTENTS
+*
+* COLORS
+* Brand colors........These are the main brand colors. They will be used the most
+* Neutral colors......White and black, gray scale, secondary colors.
+* Utility colors......Other colors to represent states: info, warning, success, etc.
+*
+* TYPOGRAPHY
+* Font families.......The fonts used in the design system.
+* Font weights........Font weights
+* Sizes...............Font sizing for body text, paragraphs, inputs
+* Heading sizes.......Font sizing for page headings
+*
+* BREAKPOINTS
+* Breakpoints.........Global responsive breakpoints definitions.
+*
+* SPACING
+* Spacing..............Global fixed set of spacing variables
+*
+* SHADOW
+* Shadow...............Global fixed set of shadow variables
+*/
+
+/*----------  COLORS  ----------*/
+
+/* Brand colors */
+$primary-blue: #2280de;
+$primary-light: #63a9ff;
+$primary-dark: #175c9e;
+$secondary-accent: #de4a22;
+
+/* Neutral colors */
+$white: #ffffff;
+$black: #000000;
+$gray-light: #f5f5f5;
+$gray-medium: #c4c4c4;
+$gray-dark: #666666;
+
+/* Utility colors */
+$success-green: #28a745;
+$warning-yellow: #ffc107;
+$error-red: #dc3545;
+$info-cyan: #17a2b8;
+
+/*----------  TYPOGRAPHY  ----------*/
+
+/**
+ *
+ * 1) The playfair font. We'll use this for headings mostly.
+ *    https://fonts.google.com/specimen/Playfair+Display
+ *
+ * 2) The raleway font. We'll use this for the body text.
+ *    https://fonts.google.com/specimen/Raleway
+ *
+ */
+
+/* Font families */
+$font-primary: "Playfair Display", sans-serif;
+$font-secondary: "Raleway", "HelveticaNeue", sans-serif;
+
+/* Font weights */
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-extrabold: 800;
+$fw-black: 900;
+
+$fw: (
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  black: 900,
+);
+
+/* Font Sizes */
+$fs-xs: 0.75rem; // 12px
+$fs-sm: 0.875rem; // 14px
+$fs-base: 1rem; // 16px
+$fs-lg: 1.125rem; // 18px
+$fs-xl: 1.5rem; // 24px
+
+$fs: (
+  xs: 0.75rem,
+  sm: 0.875rem,
+  base: 1rem,
+  lg: 1.125rem,
+  xl: 1.5rem,
+);
+
+/* Heading sizes */
+$h-1: 1.5rem; // 24px
+$h-2: 1.375rem; // 22px
+$h-3: 1.125rem; // 18px
+$h-4: 1rem; // 16px
+$h-5: 0.75rem; // 12px
+$h-6: 0.5rem; // 10px
+
+$h: (
+  1: 1.5rem,
+  2: 1.375rem,
+  3: 1.125rem,
+  4: 1rem,
+  5: 0.75rem,
+  6: 0.5rem,
+);
+
+/*----------  BREAKPOINTS  ----------*/
+
+/* Breakpoints */
+$xs: 20rem; // 320px
+$sm: 36rem; // 576px
+$md: 48rem; // 768px
+$lg: 62rem; // 992px
+$xl: 75rem; //  1200px
+
+$breakpoints: (
+  xs: 20rem,
+  sm: 36rem,
+  md: 48rem,
+  lg: 62rem,
+  xl: 75rem,
+);
+
+/*----------  SPACING  ----------*/
+
+/* Spacing */
+$spacing-none: 0;
+$spacing-xxxs: 0.25rem; // 4px
+$spacing-xxs: 0.5rem; // 8px
+$spacing-xs: 0.75rem; // 16px
+$spacing-sm: 1rem; // 24px
+$spacing-md: 1.5rem; // 32px
+$spacing-lg: 2rem; // 32px
+$spacing-xl: 3rem; // 32px
+$spacing-xxl: 4.5rem; // 32px
+$spacing-xxxl: 6rem; // 32px
+
+$spacing: (
+  none: 0,
+  xxxs: 0.25rem,
+  // 4px
+  xxs: 0.5rem,
+  // 8px
+  xs: 0.75rem,
+  // 12px
+  sm: 1rem,
+  // 16px
+  md: 1.5rem,
+  // 24px
+  lg: 2rem,
+  // 32px
+  xl: 3rem,
+  // 48px
+  xxl: 4.5rem,
+  // 72px
+  xxxl: 6rem,
+  // 96px
+) !default;
+
+/*----------  SHADOW  ----------*/
+
+/* Shadow */
+$shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.05);
+$shadow-xxl: 0 25px 50px rgba(0, 0, 0, 0.25);
+
+$shadows: (
+  xs: $shadow-xs,
+  sm: $shadow-sm,
+  md: $shadow-md,
+  lg: $shadow-lg,
+  xl: $shadow-xl,
+  xxl: $shadow-xxl,
+);

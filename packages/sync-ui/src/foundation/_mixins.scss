@@ -1,0 +1,207 @@
+/*=============================================
+=            Essential SCSS Mixins            =
+=============================================*/
+
+/*----------  Responsive Typography  ----------*/
+
+/**
+ * Mixin for responsive font sizes that scale between two breakpoints.
+ * @param {number} $min-size - Font size at the smallest breakpoint.
+ * @param {number} $max-size - Font size at the largest breakpoint.
+ * @param {number} $min-width - Smallest viewport width.
+ * @param {number} $max-width - Largest viewport width.
+ */
+@mixin responsive-font-size(
+  $min-size,
+  $max-size,
+  $min-width: 320px,
+  $max-width: 1200px
+) {
+  font-size: $min-size;
+
+  @media (min-width: $min-width) {
+    font-size: calc(
+      #{$min-size} + #{$max-size - $min-size} *
+        ((100vw - #{$min-width}) / #{$max-width - $min-width})
+    );
+  }
+
+  @media (min-width: $max-width) {
+    font-size: $max-size;
+  }
+}
+
+/*----------  Media Queries  ----------*/
+
+/**
+ * Mixin for media queries.
+ * Allows for easier and more readable media queries.
+ * @param {string} $breakpoint - The breakpoint for the media query.
+ */
+@mixin media-query($breakpoint) {
+  @if $breakpoint == "xs" {
+    @media (max-width: 575px) {
+      @content;
+    }
+  } @else if $breakpoint == "sm" {
+    @media (min-width: 576px) and (max-width: 767px) {
+      @content;
+    }
+  } @else if $breakpoint == "md" {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $breakpoint == "lg" {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $breakpoint == "xl" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+/*----------  Flexbox Layouts  ----------*/
+
+/**
+ * Mixin for flexbox container.
+ * Provides shorthand for common flexbox properties.
+ * @param {string} $direction - Flex direction (row, column, etc.).
+ * @param {string} $justify - Justify content (flex-start, center, etc.).
+ * @param {string} $align - Align items (stretch, center, etc.).
+ * @param {string} $wrap - Flex wrap (nowrap, wrap, etc.).
+ */
+@mixin flex-container(
+  $direction: row,
+  $justify: flex-start,
+  $align: stretch,
+  $wrap: nowrap
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+/**
+ * Mixin for flexbox item.
+ * Provides shorthand for common flexbox item properties.
+ * @param {number|string} $grow - Flex grow (0, 1, etc.).
+ * @param {number|string} $shrink - Flex shrink (0, 1, etc.).
+ * @param {string} $basis - Flex basis (auto, 100px, etc.).
+ */
+@mixin flex-item($grow: 0, $shrink: 1, $basis: auto) {
+  flex: $grow $shrink $basis;
+}
+
+/*----------  Centering Elements  ----------*/
+
+/**
+ * Mixin for centering elements horizontally and vertically using flexbox.
+ * Can be applied to a flex container.
+ */
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**
+ * Mixin for absolute centering.
+ * Centers an element absolutely within its container.
+ */
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*----------  Clearfix  ----------*/
+
+/**
+ * Mixin for clearfix.
+ * Ensures that a container clears its floated children.
+ */
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+/*----------  Transition  ----------*/
+
+/**
+ * Mixin for applying smooth transitions.
+ * Provides shorthand for transition properties.
+ * @param {string} $property - CSS property to transition.
+ * @param {string} $duration - Duration of the transition (e.g., 0.3s).
+ * @param {string} $timing - Timing function (e.g., ease, linear).
+ * @param {string} $delay - Delay before the transition starts.
+ */
+@mixin transition($property: all, $duration: 0.3s, $timing: ease, $delay: 0s) {
+  transition: $property $duration $timing $delay;
+}
+
+/*----------  Text Ellipsis  ----------*/
+
+/**
+ * Mixin for applying text ellipsis.
+ * Ensures that overflowing text is truncated with an ellipsis.
+ */
+@mixin text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*----------  Aspect Ratio  ----------*/
+
+/**
+ * Mixin for maintaining aspect ratio of an element.
+ * Provides a way to create elements with a specific aspect ratio.
+ * @param {number} $width - Width of the aspect ratio (e.g., 16).
+ * @param {number} $height - Height of the aspect ratio (e.g., 9).
+ */
+@mixin aspect-ratio($width: 16, $height: 9) {
+  position: relative;
+  width: 100%;
+  padding-bottom: calc(#{$height} / #{$width} * 100%);
+
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*----------  Box Shadow  ----------*/
+
+/**
+ * Mixin for applying box shadow.
+ * Provides shorthand for box-shadow properties.
+ * @param {string} $x-offset - Horizontal offset of the shadow.
+ * @param {string} $y-offset - Vertical offset of the shadow.
+ * @param {string} $blur-radius - Blur radius of the shadow.
+ * @param {string} $spread-radius - Spread radius of the shadow.
+ * @param {string} $color - Color of the shadow.
+ */
+@mixin box-shadow(
+  $x-offset: 0px,
+  $y-offset: 2px,
+  $blur-radius: 5px,
+  $spread-radius: 0px,
+  $color: rgba(0, 0, 0, 0.1)
+) {
+  box-shadow: $x-offset $y-offset $blur-radius $spread-radius $color;
+}
+
+/*=============================================
+=            End of Essential Mixins          =
+=============================================*/

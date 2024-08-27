@@ -1,0 +1,176 @@
+@import "../foundation/all";
+
+/*=============================================
+=            Atomic Styles                   =
+=============================================*/
+
+/*----------  General Styles  ----------*/
+
+body {
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  letter-spacing: $body-letter-spacing;
+  color: $body-text-color;
+  background-color: $body-bg-color;
+  margin: 0;
+  padding: 0;
+}
+
+/*----------  Headings  ----------*/
+
+h1 {
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
+  line-height: $h1-line-height;
+  letter-spacing: $h1-letter-spacing;
+  text-transform: $h1-text-transform;
+  margin: 0;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  font-weight: $h2-font-weight;
+  line-height: $h2-line-height;
+  letter-spacing: $h2-letter-spacing;
+  text-transform: $h2-text-transform;
+  margin: 0;
+}
+
+h3 {
+  font-size: $h3-font-size;
+  font-weight: $h3-font-weight;
+  line-height: $h3-line-height;
+  letter-spacing: $h3-letter-spacing;
+  text-transform: $h3-text-transform;
+  margin: 0;
+}
+
+h4 {
+  font-size: $h4-font-size;
+  font-weight: $h4-font-weight;
+  line-height: $h4-line-height;
+  letter-spacing: $h4-letter-spacing;
+  text-transform: $h4-text-transform;
+  margin: 0;
+}
+
+h5 {
+  font-size: $h5-font-size;
+  font-weight: $h5-font-weight;
+  line-height: $h5-line-height;
+  letter-spacing: $h5-letter-spacing;
+  text-transform: $h5-text-transform;
+  margin: 0;
+}
+
+h6 {
+  font-size: $h6-font-size;
+  font-weight: $h6-font-weight;
+  line-height: $h6-line-height;
+  letter-spacing: $h6-letter-spacing;
+  text-transform: $h6-text-transform;
+  margin: 0;
+}
+
+/*----------  Links  ----------*/
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+
+  &:visited {
+    color: $link-visited-color;
+  }
+
+  &:active {
+    color: $link-active-color;
+  }
+}
+
+/*----------  Buttons  ----------*/
+
+button {
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  color: $btn-primary-color;
+  background-color: $btn-primary-bg-color;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    background-color: $btn-primary-bg-hover;
+  }
+
+  &:disabled {
+    color: $btn-disabled-color;
+    background-color: $btn-disabled-bg-color;
+    border-color: $border-color-disabled;
+    cursor: not-allowed;
+  }
+}
+
+/*----------  Forms  ----------*/
+
+input,
+textarea,
+select {
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  color: $form-color;
+  background-color: $form-bg-color;
+  border: 1px solid $form-border-color;
+  border-radius: 4px;
+  padding: 0.5rem;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: $form-border-focus-color;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $form-placeholder-color;
+  }
+}
+
+/*----------  Utility Classes  ----------*/
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/*=====  End of Atomic Styles  ======*/

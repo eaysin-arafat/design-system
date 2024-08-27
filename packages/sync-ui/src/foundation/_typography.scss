@@ -1,0 +1,74 @@
+/*=============================================
+=            Foundation Typography           =
+=============================================*/
+
+/**
+ * This file defines the typography settings for the design system,
+ * including font families, font sizes, font weights, and line heights.
+ */
+
+/*----------  Font Families  ----------*/
+
+$body-font-family: var(
+  --su-body-font-family,
+  "Helvetica, Arial, sans-serif"
+) !default;
+$heading-font-family: var(--su-heading-font-family, "Georgia, serif") !default;
+$monospace-font-family: var(
+  --su-monospace-font-family,
+  "Courier New, monospace"
+) !default;
+
+/*----------  Font Sizes  ----------*/
+
+$body-font-size: var(--su-body-font-size, 16px) !default;
+$body-line-height: var(--su-body-line-height, 1.5) !default;
+$body-letter-spacing: var(--su-body-letter-spacing, 0.02em) !default;
+
+$h1-font-size: var(--su-h1-font-size, 2.5rem) !default;
+$h2-font-size: var(--su-h2-font-size, 2rem) !default;
+$h3-font-size: var(--su-h3-font-size, 1.75rem) !default;
+$h4-font-size: var(--su-h4-font-size, 1.5rem) !default;
+$h5-font-size: var(--su-h5-font-size, 1.25rem) !default;
+$h6-font-size: var(--su-h6-font-size, 1rem) !default;
+
+/*----------  Font Weights  ----------*/
+
+$body-font-weight: var(--su-body-font-weight, 400) !default;
+$heading-font-weight: var(--su-heading-font-weight, 700) !default;
+
+$h1-font-weight: var(--su-h1-font-weight, $heading-font-weight) !default;
+$h2-font-weight: var(--su-h2-font-weight, $heading-font-weight) !default;
+$h3-font-weight: var(--su-h3-font-weight, $heading-font-weight) !default;
+$h4-font-weight: var(--su-h4-font-weight, $heading-font-weight) !default;
+$h5-font-weight: var(--su-h5-font-weight, $heading-font-weight) !default;
+$h6-font-weight: var(--su-h6-font-weight, $heading-font-weight) !default;
+
+/*----------  Line Heights  ----------*/
+
+$h1-line-height: var(--su-h1-line-height, 1.2) !default;
+$h2-line-height: var(--su-h2-line-height, 1.3) !default;
+$h3-line-height: var(--su-h3-line-height, 1.4) !default;
+$h4-line-height: var(--su-h4-line-height, 1.5) !default;
+$h5-line-height: var(--su-h5-line-height, 1.6) !default;
+$h6-line-height: var(--su-h6-line-height, 1.7) !default;
+
+/*----------  Letter Spacing  ----------*/
+
+$h1-letter-spacing: var(--su-h1-letter-spacing, -0.02em) !default;
+$h2-letter-spacing: var(--su-h2-letter-spacing, -0.015em) !default;
+$h3-letter-spacing: var(--su-h3-letter-spacing, -0.01em) !default;
+$h4-letter-spacing: var(--su-h4-letter-spacing, 0em) !default;
+$h5-letter-spacing: var(--su-h5-letter-spacing, 0.01em) !default;
+$h6-letter-spacing: var(--su-h6-letter-spacing, 0.02em) !default;
+
+/*----------  Text Transformations  ----------*/
+
+$h1-text-transform: var(--su-h1-text-transform, uppercase) !default;
+$h2-text-transform: var(--su-h2-text-transform, none) !default;
+$h3-text-transform: var(--su-h3-text-transform, none) !default;
+$h4-text-transform: var(--su-h4-text-transform, none) !default;
+$h5-text-transform: var(--su-h5-text-transform, none) !default;
+$h6-text-transform: var(--su-h6-text-transform, none) !default;
+
+/*=====  End of Section comment block  ======*/
