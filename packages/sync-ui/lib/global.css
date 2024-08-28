@@ -28,11 +28,20 @@
 * BREAKPOINTS
 * Breakpoints.........Global responsive breakpoints definitions.
 *
+* MARGIN
+* Margin..............Global fixed set of margin variables
+*
+* PADDING
+* Padding..............Global fixed set of padding variables
+*
 * SPACING
 * Spacing..............Global fixed set of spacing variables
 *
 * SHADOW
 * Shadow...............Global fixed set of shadow variables
+*
+* BORDER
+* Border...............Global fixed set of border variables
 */
 /*----------  COLORS  ----------*/
 /* Brand colors */
@@ -54,6 +63,8 @@
 /* Heading sizes */
 /*----------  BREAKPOINTS  ----------*/
 /* Breakpoints */
+/*----------  MARGIN  ----------*/
+/*----------  PADDING  ----------*/
 /*----------  SPACING  ----------*/
 /* Spacing */
 /*----------  SHADOW  ----------*/
@@ -112,6 +123,7 @@
  * including font families, font sizes, font weights, and line heights.
  */
 /*----------  Font Families  ----------*/
+/*----------  Text Color  ----------*/
 /*----------  Font Sizes  ----------*/
 /*----------  Font Weights  ----------*/
 /*----------  Line Heights  ----------*/

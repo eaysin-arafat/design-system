@@ -1,0 +1,33 @@
+@import "../foundation//all";
+
+@each $size, $value in $padding {
+  .su-padding-#{$size} {
+    padding: $value;
+  }
+
+  .su-padding-top-#{$size} {
+    padding-top: $value;
+  }
+
+  .su-padding-right-#{$size} {
+    padding-right: $value;
+  }
+
+  .su-padding-bottom-#{$size} {
+    padding-bottom: $value;
+  }
+
+  .su-padding-left-#{$size} {
+    padding-left: $value;
+  }
+
+  .su-padding-y-#{$size} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  .su-padding-x-#{$size} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+}

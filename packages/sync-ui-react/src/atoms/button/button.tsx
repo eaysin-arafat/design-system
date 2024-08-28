@@ -1,4 +1,4 @@
-import "@sync-workspace/sync-ui/lib/button.css";
+import "@sync-workspace/sync-ui/lib/spacing.css";
 import React from "react";
 
 interface ButtonProps {

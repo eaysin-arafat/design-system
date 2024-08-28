@@ -201,167 +201,302 @@
 /*=============================================
 =            End of Essential Mixins          =
 =============================================*/
-/*=============================================
-=            Atomic Styles                   =
-=============================================*/
-/*----------  General Styles  ----------*/
-body {
-  font-family: var(--su-body-font-family, "Helvetica, Arial, sans-serif");
-  font-size: var(--su-body-font-size, 16px);
-  line-height: var(--su-body-line-height, 1.5);
-  letter-spacing: var(--su-body-letter-spacing, 0.02em);
-  color: #000000;
-  background-color: var(--su-body-bg-color, #ffffff);
-  margin: 0;
-  padding: 0;
-}
-
-/*----------  Headings  ----------*/
-h1 {
-  font-size: var(--su-h1-font-size, 2.5rem);
-  font-weight: var(--su-h1-font-weight, var(--su-heading-font-weight, 700));
-  line-height: var(--su-h1-line-height, 1.2);
-  letter-spacing: var(--su-h1-letter-spacing, -0.02em);
-  text-transform: var(--su-h1-text-transform, uppercase);
+.su-margin-none {
   margin: 0;
 }
 
-h2 {
-  font-size: var(--su-h2-font-size, 2rem);
-  font-weight: var(--su-h2-font-weight, var(--su-heading-font-weight, 700));
-  line-height: var(--su-h2-line-height, 1.3);
-  letter-spacing: var(--su-h2-letter-spacing, -0.015em);
-  text-transform: var(--su-h2-text-transform, none);
-  margin: 0;
+.su-margin-top-none {
+  margin-top: 0;
 }
 
-h3 {
-  font-size: var(--su-h3-font-size, 1.75rem);
-  font-weight: var(--su-h3-font-weight, var(--su-heading-font-weight, 700));
-  line-height: var(--su-h3-line-height, 1.4);
-  letter-spacing: var(--su-h3-letter-spacing, -0.01em);
-  text-transform: var(--su-h3-text-transform, none);
-  margin: 0;
+.su-margin-right-none {
+  margin-right: 0;
 }
 
-h4 {
-  font-size: var(--su-h4-font-size, 1.5rem);
-  font-weight: var(--su-h4-font-weight, var(--su-heading-font-weight, 700));
-  line-height: var(--su-h4-line-height, 1.5);
-  letter-spacing: var(--su-h4-letter-spacing, 0em);
-  text-transform: var(--su-h4-text-transform, none);
-  margin: 0;
+.su-margin-bottom-none {
+  margin-bottom: 0;
 }
 
-h5 {
-  font-size: var(--su-h5-font-size, 1.25rem);
-  font-weight: var(--su-h5-font-weight, var(--su-heading-font-weight, 700));
-  line-height: var(--su-h5-line-height, 1.6);
-  letter-spacing: var(--su-h5-letter-spacing, 0.01em);
-  text-transform: var(--su-h5-text-transform, none);
-  margin: 0;
+.su-margin-left-none {
+  margin-left: 0;
 }
 
-h6 {
-  font-size: var(--su-h6-font-size, 1rem);
-  font-weight: var(--su-h6-font-weight, var(--su-heading-font-weight, 700));
-  line-height: var(--su-h6-line-height, 1.7);
-  letter-spacing: var(--su-h6-letter-spacing, 0.02em);
-  text-transform: var(--su-h6-text-transform, none);
-  margin: 0;
+.su-margin-y-none {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-/*----------  Links  ----------*/
-a {
-  color: var(--su-link-color, #2280de);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: var(--su-link-hover-color, #175c9e);
-}
-a:visited {
-  color: var(--su-link-visited-color, #63a9ff);
-}
-a:active {
-  color: var(--su-link-active-color, #175c9e);
+.su-margin-x-none {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-/*----------  Buttons  ----------*/
-button {
-  font-family: var(--su-body-font-family, "Helvetica, Arial, sans-serif");
-  font-size: var(--su-body-font-size, 16px);
-  font-weight: var(--su-body-font-weight, 400);
-  color: var(--su-btn-primary-color, #ffffff);
-  background-color: var(--su-btn-primary-bg-color, #2280de);
-  border: 1px solid var(--su-border-color, #c4c4c4);
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-button:hover {
-  background-color: var(--su-btn-primary-bg-hover, #63a9ff);
-}
-button:disabled {
-  color: var(--su-btn-disabled-color, #666666);
-  background-color: var(--su-btn-disabled-bg-color, #c4c4c4);
-  border-color: var(--su-border-color-disabled, #f5f5f5);
-  cursor: not-allowed;
+.su-margin-xxxs {
+  margin: 0.25rem;
 }
 
-/*----------  Forms  ----------*/
-input,
-textarea,
-select {
-  font-family: var(--su-body-font-family, "Helvetica, Arial, sans-serif");
-  font-size: var(--su-body-font-size, 16px);
-  color: var(--dse-form-color, #000000);
-  background-color: var(--dse-form-bg-color, #ffffff);
-  border: 1px solid var(--dse-form-border-color, #c4c4c4);
-  border-radius: 4px;
-  padding: 0.5rem;
-  transition: border-color 0.3s ease;
-}
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: var(--dse-form-border-focus-color, #28a745);
-  outline: none;
-}
-input::placeholder,
-textarea::placeholder,
-select::placeholder {
-  color: var(--dse-form-placeholder-color, #666666);
+.su-margin-top-xxxs {
+  margin-top: 0.25rem;
 }
 
-/*----------  Utility Classes  ----------*/
-.mt-1 {
+.su-margin-right-xxxs {
+  margin-right: 0.25rem;
+}
+
+.su-margin-bottom-xxxs {
+  margin-bottom: 0.25rem;
+}
+
+.su-margin-left-xxxs {
+  margin-left: 0.25rem;
+}
+
+.su-margin-y-xxxs {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.su-margin-x-xxxs {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.su-margin-xxs {
+  margin: 0.5rem;
+}
+
+.su-margin-top-xxs {
+  margin-top: 0.5rem;
+}
+
+.su-margin-right-xxs {
+  margin-right: 0.5rem;
+}
+
+.su-margin-bottom-xxs {
+  margin-bottom: 0.5rem;
+}
+
+.su-margin-left-xxs {
+  margin-left: 0.5rem;
+}
+
+.su-margin-y-xxs {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.su-margin-x-xxs {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.su-margin-xs {
+  margin: 0.75rem;
+}
+
+.su-margin-top-xs {
+  margin-top: 0.75rem;
+}
+
+.su-margin-right-xs {
+  margin-right: 0.75rem;
+}
+
+.su-margin-bottom-xs {
+  margin-bottom: 0.75rem;
+}
+
+.su-margin-left-xs {
+  margin-left: 0.75rem;
+}
+
+.su-margin-y-xs {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.su-margin-x-xs {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.su-margin-sm {
+  margin: 1rem;
+}
+
+.su-margin-top-sm {
   margin-top: 1rem;
 }
 
-.mb-1 {
+.su-margin-right-sm {
+  margin-right: 1rem;
+}
+
+.su-margin-bottom-sm {
   margin-bottom: 1rem;
 }
 
-.pt-1 {
-  padding-top: 1rem;
+.su-margin-left-sm {
+  margin-left: 1rem;
 }
 
-.pb-1 {
-  padding-bottom: 1rem;
+.su-margin-y-sm {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.text-center {
-  text-align: center;
+.su-margin-x-sm {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.text-right {
-  text-align: right;
+.su-margin-md {
+  margin: 1.5rem;
 }
 
-.text-left {
-  text-align: left;
+.su-margin-top-md {
+  margin-top: 1.5rem;
 }
 
-/*=====  End of Atomic Styles  ======*/
+.su-margin-right-md {
+  margin-right: 1.5rem;
+}
+
+.su-margin-bottom-md {
+  margin-bottom: 1.5rem;
+}
+
+.su-margin-left-md {
+  margin-left: 1.5rem;
+}
+
+.su-margin-y-md {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.su-margin-x-md {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.su-margin-lg {
+  margin: 2rem;
+}
+
+.su-margin-top-lg {
+  margin-top: 2rem;
+}
+
+.su-margin-right-lg {
+  margin-right: 2rem;
+}
+
+.su-margin-bottom-lg {
+  margin-bottom: 2rem;
+}
+
+.su-margin-left-lg {
+  margin-left: 2rem;
+}
+
+.su-margin-y-lg {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.su-margin-x-lg {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.su-margin-xl {
+  margin: 3rem;
+}
+
+.su-margin-top-xl {
+  margin-top: 3rem;
+}
+
+.su-margin-right-xl {
+  margin-right: 3rem;
+}
+
+.su-margin-bottom-xl {
+  margin-bottom: 3rem;
+}
+
+.su-margin-left-xl {
+  margin-left: 3rem;
+}
+
+.su-margin-y-xl {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.su-margin-x-xl {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.su-margin-xxl {
+  margin: 4.5rem;
+}
+
+.su-margin-top-xxl {
+  margin-top: 4.5rem;
+}
+
+.su-margin-right-xxl {
+  margin-right: 4.5rem;
+}
+
+.su-margin-bottom-xxl {
+  margin-bottom: 4.5rem;
+}
+
+.su-margin-left-xxl {
+  margin-left: 4.5rem;
+}
+
+.su-margin-y-xxl {
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+}
+
+.su-margin-x-xxl {
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+}
+
+.su-margin-xxxl {
+  margin: 6rem;
+}
+
+.su-margin-top-xxxl {
+  margin-top: 6rem;
+}
+
+.su-margin-right-xxxl {
+  margin-right: 6rem;
+}
+
+.su-margin-bottom-xxxl {
+  margin-bottom: 6rem;
+}
+
+.su-margin-left-xxxl {
+  margin-left: 6rem;
+}
+
+.su-margin-y-xxxl {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.su-margin-x-xxxl {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}

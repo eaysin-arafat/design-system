@@ -1,0 +1,33 @@
+@import "../foundation/all";
+
+@each $size, $value in $margin {
+  .su-margin-#{$size} {
+    margin: $value;
+  }
+
+  .su-margin-top-#{$size} {
+    margin-top: $value;
+  }
+
+  .su-margin-right-#{$size} {
+    margin-right: $value;
+  }
+
+  .su-margin-bottom-#{$size} {
+    margin-bottom: $value;
+  }
+
+  .su-margin-left-#{$size} {
+    margin-left: $value;
+  }
+
+  .su-margin-y-#{$size} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  .su-margin-x-#{$size} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+}

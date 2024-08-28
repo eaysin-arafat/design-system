@@ -1,4 +1,4 @@
-import { Button } from "@sync-workspace/sync-ui-react/lib";
+import { Button, Color, Text } from "@sync-workspace/sync-ui-react/lib";
 import { useState } from "react";
 
 function App() {
@@ -6,9 +6,12 @@ function App() {
 
   return (
     <>
+      <Color hexCode="black" height={"sm"} width={"xl"} />
+      <Text size="xl">Text</Text>
       <Button onClick={() => {}} title="BUtton Title">
         Button
       </Button>
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

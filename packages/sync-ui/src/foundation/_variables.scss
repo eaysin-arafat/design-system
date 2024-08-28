@@ -19,11 +19,20 @@
 * BREAKPOINTS
 * Breakpoints.........Global responsive breakpoints definitions.
 *
+* MARGIN
+* Margin..............Global fixed set of margin variables
+*
+* PADDING
+* Padding..............Global fixed set of padding variables
+*
 * SPACING
 * Spacing..............Global fixed set of spacing variables
 *
 * SHADOW
 * Shadow...............Global fixed set of shadow variables
+*
+* BORDER
+* Border...............Global fixed set of border variables
 */
 
 /*----------  COLORS  ----------*/
@@ -130,6 +139,76 @@ $breakpoints: (
   lg: 62rem,
   xl: 75rem,
 );
+
+/*----------  MARGIN  ----------*/
+
+$none: 0;
+$xxxs: 0.25rem; // 4px
+$xxs: 0.5rem; // 8px
+$xs: 0.75rem; // 12px
+$sm: 1rem; // 16px
+$md: 1.5rem; // 24px
+$lg: 2rem; // 32px
+$xl: 3rem; // 48px
+$xxl: 4.5rem; // 72px
+$xxxl: 6rem; // 96px
+
+$margin: (
+  none: 0,
+  xxxs: 0.25rem,
+  // 4px
+  xxs: 0.5rem,
+  // 8px
+  xs: 0.75rem,
+  // 12px
+  sm: 1rem,
+  // 16px
+  md: 1.5rem,
+  // 24px
+  lg: 2rem,
+  // 32px
+  xl: 3rem,
+  // 48px
+  xxl: 4.5rem,
+  // 72px
+  xxxl: 6rem,
+  // 96px
+) !default;
+
+/*----------  PADDING  ----------*/
+
+$none: 0;
+$xxxs: 0.25rem; // 4px
+$xxs: 0.5rem; // 8px
+$xs: 0.75rem; // 12px
+$sm: 1rem; // 16px
+$md: 1.5rem; // 24px
+$lg: 2rem; // 32px
+$xl: 3rem; // 48px
+$xxl: 4.5rem; // 72px
+$xxxl: 6rem; // 96px
+
+$padding: (
+  none: 0,
+  xxxs: 0.25rem,
+  // 4px
+  xxs: 0.5rem,
+  // 8px
+  xs: 0.75rem,
+  // 12px
+  sm: 1rem,
+  // 16px
+  md: 1.5rem,
+  // 24px
+  lg: 2rem,
+  // 32px
+  xl: 3rem,
+  // 48px
+  xxl: 4.5rem,
+  // 72px
+  xxxl: 6rem,
+  // 96px
+) !default;
 
 /*----------  SPACING  ----------*/
 

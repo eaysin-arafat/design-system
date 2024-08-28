@@ -19,6 +19,11 @@ $monospace-font-family: var(
   "Courier New, monospace"
 ) !default;
 
+// ! TODO define multiple color text based on ui need
+/*----------  Text Color  ----------*/
+
+$body-text-color: $black;
+
 /*----------  Font Sizes  ----------*/
 
 $body-font-size: var(--su-body-font-size, 16px) !default;

@@ -1,0 +1,25 @@
+@import "../foundation/all";
+
+.su-text {
+  margin: 0;
+  font-family: $body-font-family;
+  color: $body-text-color;
+}
+
+@each $size, $value in $fs {
+  .su-text-#{$size} {
+    font-size: $value;
+  }
+}
+
+.su-text-center {
+  text-align: center;
+}
+
+.su-text-right {
+  text-align: right;
+}
+
+.su-text-left {
+  text-align: left;
+}
