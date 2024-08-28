@@ -137,6 +137,8 @@
  * Allows for easier and more readable media queries.
  * @param {string} $breakpoint - The breakpoint for the media query.
  */
+/*----------  Padding  ----------*/
+/*----------  Margin  ----------*/
 /*----------  Flexbox Layouts  ----------*/
 /**
  * Mixin for flexbox container.
@@ -205,298 +207,198 @@
   margin: 0;
 }
 
-.su-margin-top-none {
-  margin-top: 0;
+.su-margin-left-none {
+  margin-left: 0;
 }
 
 .su-margin-right-none {
   margin-right: 0;
 }
 
+.su-margin-top-none {
+  margin-top: 0;
+}
+
 .su-margin-bottom-none {
   margin-bottom: 0;
-}
-
-.su-margin-left-none {
-  margin-left: 0;
-}
-
-.su-margin-y-none {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.su-margin-x-none {
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .su-margin-xxxs {
   margin: 0.25rem;
 }
 
-.su-margin-top-xxxs {
-  margin-top: 0.25rem;
+.su-margin-left-xxxs {
+  margin-left: 0.25rem;
 }
 
 .su-margin-right-xxxs {
   margin-right: 0.25rem;
 }
 
+.su-margin-top-xxxs {
+  margin-top: 0.25rem;
+}
+
 .su-margin-bottom-xxxs {
   margin-bottom: 0.25rem;
-}
-
-.su-margin-left-xxxs {
-  margin-left: 0.25rem;
-}
-
-.su-margin-y-xxxs {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.su-margin-x-xxxs {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
 }
 
 .su-margin-xxs {
   margin: 0.5rem;
 }
 
-.su-margin-top-xxs {
-  margin-top: 0.5rem;
+.su-margin-left-xxs {
+  margin-left: 0.5rem;
 }
 
 .su-margin-right-xxs {
   margin-right: 0.5rem;
 }
 
+.su-margin-top-xxs {
+  margin-top: 0.5rem;
+}
+
 .su-margin-bottom-xxs {
   margin-bottom: 0.5rem;
-}
-
-.su-margin-left-xxs {
-  margin-left: 0.5rem;
-}
-
-.su-margin-y-xxs {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.su-margin-x-xxs {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .su-margin-xs {
   margin: 0.75rem;
 }
 
-.su-margin-top-xs {
-  margin-top: 0.75rem;
+.su-margin-left-xs {
+  margin-left: 0.75rem;
 }
 
 .su-margin-right-xs {
   margin-right: 0.75rem;
 }
 
+.su-margin-top-xs {
+  margin-top: 0.75rem;
+}
+
 .su-margin-bottom-xs {
   margin-bottom: 0.75rem;
-}
-
-.su-margin-left-xs {
-  margin-left: 0.75rem;
-}
-
-.su-margin-y-xs {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.su-margin-x-xs {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .su-margin-sm {
   margin: 1rem;
 }
 
-.su-margin-top-sm {
-  margin-top: 1rem;
+.su-margin-left-sm {
+  margin-left: 1rem;
 }
 
 .su-margin-right-sm {
   margin-right: 1rem;
 }
 
+.su-margin-top-sm {
+  margin-top: 1rem;
+}
+
 .su-margin-bottom-sm {
   margin-bottom: 1rem;
-}
-
-.su-margin-left-sm {
-  margin-left: 1rem;
-}
-
-.su-margin-y-sm {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.su-margin-x-sm {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .su-margin-md {
   margin: 1.5rem;
 }
 
-.su-margin-top-md {
-  margin-top: 1.5rem;
+.su-margin-left-md {
+  margin-left: 1.5rem;
 }
 
 .su-margin-right-md {
   margin-right: 1.5rem;
 }
 
+.su-margin-top-md {
+  margin-top: 1.5rem;
+}
+
 .su-margin-bottom-md {
   margin-bottom: 1.5rem;
-}
-
-.su-margin-left-md {
-  margin-left: 1.5rem;
-}
-
-.su-margin-y-md {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.su-margin-x-md {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .su-margin-lg {
   margin: 2rem;
 }
 
-.su-margin-top-lg {
-  margin-top: 2rem;
+.su-margin-left-lg {
+  margin-left: 2rem;
 }
 
 .su-margin-right-lg {
   margin-right: 2rem;
 }
 
+.su-margin-top-lg {
+  margin-top: 2rem;
+}
+
 .su-margin-bottom-lg {
   margin-bottom: 2rem;
-}
-
-.su-margin-left-lg {
-  margin-left: 2rem;
-}
-
-.su-margin-y-lg {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.su-margin-x-lg {
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .su-margin-xl {
   margin: 3rem;
 }
 
-.su-margin-top-xl {
-  margin-top: 3rem;
+.su-margin-left-xl {
+  margin-left: 3rem;
 }
 
 .su-margin-right-xl {
   margin-right: 3rem;
 }
 
+.su-margin-top-xl {
+  margin-top: 3rem;
+}
+
 .su-margin-bottom-xl {
   margin-bottom: 3rem;
-}
-
-.su-margin-left-xl {
-  margin-left: 3rem;
-}
-
-.su-margin-y-xl {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.su-margin-x-xl {
-  margin-left: 3rem;
-  margin-right: 3rem;
 }
 
 .su-margin-xxl {
   margin: 4.5rem;
 }
 
-.su-margin-top-xxl {
-  margin-top: 4.5rem;
+.su-margin-left-xxl {
+  margin-left: 4.5rem;
 }
 
 .su-margin-right-xxl {
   margin-right: 4.5rem;
 }
 
+.su-margin-top-xxl {
+  margin-top: 4.5rem;
+}
+
 .su-margin-bottom-xxl {
   margin-bottom: 4.5rem;
-}
-
-.su-margin-left-xxl {
-  margin-left: 4.5rem;
-}
-
-.su-margin-y-xxl {
-  margin-top: 4.5rem;
-  margin-bottom: 4.5rem;
-}
-
-.su-margin-x-xxl {
-  margin-left: 4.5rem;
-  margin-right: 4.5rem;
 }
 
 .su-margin-xxxl {
   margin: 6rem;
 }
 
-.su-margin-top-xxxl {
-  margin-top: 6rem;
+.su-margin-left-xxxl {
+  margin-left: 6rem;
 }
 
 .su-margin-right-xxxl {
   margin-right: 6rem;
 }
 
+.su-margin-top-xxxl {
+  margin-top: 6rem;
+}
+
 .su-margin-bottom-xxxl {
   margin-bottom: 6rem;
-}
-
-.su-margin-left-xxxl {
-  margin-left: 6rem;
-}
-
-.su-margin-y-xxxl {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-
-.su-margin-x-xxxl {
-  margin-left: 6rem;
-  margin-right: 6rem;
 }

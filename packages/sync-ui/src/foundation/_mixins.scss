@@ -62,6 +62,18 @@
   }
 }
 
+/*----------  Padding  ----------*/
+
+@mixin padding($space) {
+  padding: map-get($spacing, $space);
+}
+
+/*----------  Margin  ----------*/
+
+@mixin margin($space) {
+  margin: map-get($spacing, $space);
+}
+
 /*----------  Flexbox Layouts  ----------*/
 
 /**

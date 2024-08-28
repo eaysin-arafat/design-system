@@ -1,28 +1,34 @@
-import { Button, Color, Text } from "@sync-workspace/sync-ui-react/lib";
-import { useState } from "react";
+import {
+  Button,
+  Color,
+  Margin,
+  Select,
+  Text,
+} from "@sync-workspace/sync-ui-react/lib";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Color hexCode="black" height={"sm"} width={"xl"} />
-      <Text size="xl">Text</Text>
+      <Margin bottom left>
+        <Text size="sm">Text</Text>
+      </Margin>
       <Button onClick={() => {}} title="BUtton Title">
         Button
       </Button>
 
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Margin>
+        <Select
+          key={Date.now()}
+          label="Please Select Option"
+          options={[
+            { label: "Red", value: "red" },
+            { label: "Green", value: "green" },
+            { label: "Blue", value: "blue" },
+          ]}
+          onOptionSelected={console.log}
+        ></Select>
+      </Margin>
     </>
   );
 }

@@ -6,6 +6,7 @@ module.exports = {
     "src/atoms/button/index.ts",
     "src/atoms/color/index.ts",
     "src/atoms/text/index.ts",
+    "src/atoms/margin/index.ts",
   ],
   output: {
     dir: "lib",
@@ -14,9 +15,5 @@ module.exports = {
     preserveModules: true,
   },
   plugins: [ts()],
-  external: [
-    "react",
-    "react/jsx-runtime",
-    "@sync-workspace/sync-ui/lib/button.css",
-  ],
+  external: ["react"],
 };
