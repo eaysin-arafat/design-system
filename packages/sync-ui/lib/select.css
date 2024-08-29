@@ -245,6 +245,9 @@
   background-color: var(--dse-form-bg-option-selected, #28a745);
   color: var(--dse-form-color-option-selected, #ffffff);
 }
+.su-select__option--highlighted {
+  background-color: var(--dse-form-bg-color-hover, #f5f5f5);
+}
 .su-select__option--selected:hover {
   background-color: var(--dse-form-bg-option-selected, #28a745);
 }

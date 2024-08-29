@@ -5,6 +5,7 @@ import {
   Select,
   Text,
 } from "@sync-workspace/sync-ui-react/lib";
+import "./index.css";
 
 function App() {
   return (
@@ -17,18 +18,16 @@ function App() {
         Button
       </Button>
 
-      <Margin>
-        <Select
-          key={Date.now()}
-          label="Please Select Option"
-          options={[
-            { label: "Red", value: "red" },
-            { label: "Green", value: "green" },
-            { label: "Blue", value: "blue" },
-          ]}
-          onOptionSelected={console.log}
-        ></Select>
-      </Margin>
+      <Select
+        key={Date.now()}
+        label="Please Select Option"
+        options={[
+          { label: "Red", value: "red" },
+          { label: "Green", value: "green" },
+          { label: "Blue", value: "blue" },
+        ]}
+        onOptionSelected={console.log}
+      />
     </>
   );
 }
